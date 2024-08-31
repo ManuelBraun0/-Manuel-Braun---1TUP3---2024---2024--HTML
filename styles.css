@@ -1,0 +1,66 @@
+.articuloscaja{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid black;
+}
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a:hover{background-color: yellow;}
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+.header, .articulos,.asidederecha, .footer{
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+}
+@media all and (min-width: 600px){
+    .padre{display: flex;}
+    .padre{flex-direction: row;}
+    .asidederecha{flex: 1 1 auto;}
+}
+@media all and (min-width: 800px){
+    .articulos{flex: 8 0;}
+    .articulos{order: 1;}
+    .asidederecha{order: 2;}
+    .footer{order: 3;}
+}
+@media all and (max-width: 599px) {
+    .padre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asidederecha {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+.header{
+    background-color: red;
+}
+.articulos{
+    background-color: white;
+}
+.asidederecha{
+    background-color: blue;
+}
+.footer{
+    background-color: red;
+}
